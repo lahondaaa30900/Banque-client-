@@ -3,7 +3,8 @@
 }
 
 .center-text {
-    text-align: center;
+    text-align: center; /* Modification de la propriété text-align à "center" */
+    margin: 0 auto; /* Ajout de la marge pour centrer horizontalement */
 }
 
 .body {
@@ -12,4 +13,6 @@
 
 .police {
     color: orange;
+    text-align: center;
+    margin: 0 auto;
 }
