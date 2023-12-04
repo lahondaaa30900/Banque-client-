@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-VA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="CSS/syle.css" />
-        <title> Page de connexion</title>
-    </head>
-    <body class="body">
-        <div class="center-text">
-            <img src="Images/Logo/Capture.PNG">
-        </div>
-        <form action="">
-            <div class="center-text">
-                <b>
-                    <div class="police"><h1> Bonjour </h1></div>
-                </b>
-            </div>
-            <div class="police">
-                <fieldset>
-                    <legend><span class=number></span>Connexion</legend>
-                    <label for="Id">Identifiant :</label>
-                    <input type="text" id="id"/>
-                    <label for="password">Mot de passe :</label>
-                    <input for="password" id="password" />
-                </fieldset>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/syle.css">
+    <title>Page de Connexion</title>
+</head>
+<body>
+    <div class="login-container">
+        <header>
+            <img src="Images/Logo/Capture.PNG" alt="Logo de votre site">
+        </header>
+        <div class="login-box">
+            <h2>Connectez-vous à votre compte</h2>
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-        </form>
-    </body>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit">Se connecter</button>
+            </form>
+            <p>Vous n'avez pas de compte ? <a href="inscription.html">Inscrivez-vous ici</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
