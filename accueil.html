@@ -20,8 +20,21 @@
                 </li>
             </ul>
             <div class="cart">
-                <a href="./page_de_co.html"><img src="./Images/panier/image-panier5.png"></a>
-            </div>
+                <a href="#" id="panierButton"><img src="./Images/panier/image-panier5.png"></a>
         </div>
-    </body>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sélectionnez le bouton du panier par son ID
+            var panierButton = document.getElementById('panierButton');
+
+            // Ajoutez un écouteur d'événements au clic sur le bouton du panier
+            panierButton.addEventListener('click', function () {
+                // Redirigez l'utilisateur vers la page "panier.html"
+                window.location.href = 'panier.html';
+            });
+        });
+    </script>
+</body>
 </html>
