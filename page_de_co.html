@@ -29,5 +29,26 @@
             <p>Vous n'avez pas de compte ? <a href="inscription.html">Inscrivez-vous ici</a>.</p>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var loginForm = document.getElementById('loginForm');
+
+            loginForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Vérifiez les identifiants ici (remplacez cela par la logique réelle)
+                var identifiantsValides = true;
+
+                if (identifiantsValides) {
+                    // Redirige l'utilisateur vers la page d'accueil après la connexion réussie
+                    window.location.href = 'acceuil.html';
+                } else {
+                    // Gérez le cas où les identifiants ne sont pas valides (par exemple, affichez un message d'erreur)
+                    console.log('Votre identifiant ou mot de passe est incorrect.');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
