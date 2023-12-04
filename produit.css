@@ -9,6 +9,7 @@ body{
     color: white;
 }
 
+
 #carte
 {
     width : 800px;
@@ -21,6 +22,55 @@ body{
 img {
     width: 40%;
 }
+
+.image1{
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.image2{
+    float: right;
+    margin-right: 20px;
+    margin-top: 170px;
+}
+
+.image3{
+    float: left;
+    margin-right: 20px;
+    margin-top: 250px;
+}
+
+.image4{
+    float: right;
+    margin-right: 20px;
+    margin-top: 330px;
+}
+
+.texte1{
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.texte2{
+    float: left;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.texte3{
+    float: right;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+.texte4{
+    float: left;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
 ul li 
 {
     list-style-type: none;
