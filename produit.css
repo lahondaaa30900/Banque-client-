@@ -1,0 +1,28 @@
+h1
+{
+    color: yellow;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
+#carte
+{
+    width : 800px;
+    margin:0 auto;
+    background-color: white;
+    text-align:center;
+    align-content:center;
+
+}
+img {
+    width: 40%;
+}
+ul li 
+{
+    list-style-type: none;
+}
+
+
