@@ -80,3 +80,22 @@
 .navbar li ul li a:hover {
     background-color: #a3a1a1;
 }
+
+.cart {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart a {
+    text-decoration: none;
+    color: orange;
+    padding: 5px 10px;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+.cart a:hover {
+    background-color: orange;
+    color: black;
+}
