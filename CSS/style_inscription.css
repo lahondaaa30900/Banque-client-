@@ -10,6 +10,16 @@ body {
     height: 100vh;
 }
 
+img {
+    max-width: 200px; /* Ajustez selon la taille de votre logo */
+}
+
+header {
+    background-color: #333; /* Couleur de fond du header, ajustez selon vos besoins */
+    text-align: center; /* Pour centrer l'image horizontalement */
+    padding: 20px; /* Ajoute un espace autour du logo */
+}
+
 .container {
     background-color: #fff;
     border-radius: 8px;
