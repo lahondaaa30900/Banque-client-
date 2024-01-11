@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Shopcenter</title>
+        <link rel="stylesheet" href="CSS/syle.css" />
+    </head>
+    <body class="body">
+        <div class="center-text">
+            <img src="Images/Logo/Capture.PNG">
+        </div>            
+        <div id="wrap">
+            <ul class="navbar">
+                <li>
+                    <a href="index.html">Acceuil</a>
+                </li>
+                <li>
+                    <a href="index.html">Homme</a>
+                </li>
+                <li>
+                    <a href="index.html">Femme</a>
+                </li>
+            </ul>
+            <div class="cart">
+                <a href="#" id="panierButton"><img src="./Images/panier/image-panier5.png"></a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sélectionnez le bouton du panier par son ID
+            var panierButton = document.getElementById('panierButton');
+
+            // Ajoutez un écouteur d'événements au clic sur le bouton du panier
+            panierButton.addEventListener('click', function () {
+                // Redirigez l'utilisateur vers la page "panier.html"
+                window.location.href = 'panier.html';
+            });
+        });
+    </script>
+</body>
+</html>
