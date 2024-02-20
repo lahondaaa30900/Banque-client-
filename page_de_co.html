@@ -29,6 +29,25 @@
             <p>Vous n'avez pas de compte ? <a href="inscription.html"> Inscrivez-vous ici.</a></p>
         </div>
     </div>
-    <script src="/Scriptdeconnexion.js"></script>
+
+    <script src="bdd.js"></script>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire par défaut
+            
+            // Récupérer les valeurs du formulaire
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Vérifier si les identifiants sont valides
+            if (database.hasOwnProperty(email) && database[email] === password) {
+                // Rediriger vers la page d'accueil si les identifiants sont valides
+                window.location.href = "acceuil.html";
+            } else {
+                // Afficher un message d'erreur si les identifiants sont incorrects
+                alert("Adresse e-mail ou mot de passe incorrect.");
+            }
+        });
+    </script>
 </body>
 </html>
