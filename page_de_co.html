@@ -30,23 +30,24 @@
         </div>
     </div>
 
-    <script src="bdd.js"></script>
     <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Empêche l'envoi du formulaire par défaut
-            
-            // Récupérer les valeurs du formulaire
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
+        document.addEventListener('DOMContentLoaded', function () {
+            var loginForm = document.getElementById('loginForm');
 
-            // Vérifier si les identifiants sont valides
-            if (database.hasOwnProperty(email) && database[email] === password) {
-                // Rediriger vers la page d'accueil si les identifiants sont valides
-                window.location.href = "inscription.html";
-            } else {
-                // Afficher un message d'erreur si les identifiants sont incorrects
-                alert("Adresse e-mail ou mot de passe incorrect.");
-            }
+            loginForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Vérifiez les identifiants ici (remplacez cela par la logique réelle)
+                var identifiantsValides = true;
+
+                if (identifiantsValides) {
+                    // Redirige l'utilisateur vers la page d'accueil après la connexion réussie
+                    window.location.href = 'acceuil.html';
+                } else {
+                    // Gérez le cas où les identifiants ne sont pas valides (par exemple, affichez un message d'erreur)
+                    console.log('Votre identifiant ou mot de passe est incorrect.');
+                }
+            });
         });
     </script>
 </body>
