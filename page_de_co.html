@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/syle.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Page de Connexion</title>
 </head>
 <body>
@@ -30,7 +30,9 @@
         </div>
     </div>
 
-    <script src="bdd.js"></script>
+    <!-- Inclusion du script de la base de données -->
+    <script src="database.js"></script>
+
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Empêche l'envoi du formulaire par défaut
@@ -42,7 +44,7 @@
             // Vérifier si les identifiants sont valides
             if (database.hasOwnProperty(email) && database[email] === password) {
                 // Rediriger vers la page d'accueil si les identifiants sont valides
-                window.location.href = "acceuil.html";
+                window.location.href = "accueil.html";
             } else {
                 // Afficher un message d'erreur si les identifiants sont incorrects
                 alert("Adresse e-mail ou mot de passe incorrect.");
