@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/syle.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Page de Connexion</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         </header>
         <div class="login-box">
             <h2>Connectez-vous à votre compte</h2>
-            <form action="login.php" method="post">
+            <form method="post" id="loginForm">
                 <div class="form-group">
                     <label for="email">Email :</label>
                     <input type="email" id="email" name="email" required>
@@ -24,32 +24,29 @@
                     <input type="password" id="password" name="password" required>
                 </div>
 
-                <a href="/feature/page_d_accueil">
-                    <button type="button">Se connecter</button>
-                </a>
+                <button type="submit">Se connecter</button>
             </form>
             <p>Vous n'avez pas de compte ? <a href="inscription.html"> Inscrivez-vous ici.</a></p>
         </div>
     </div>
 
+    <script src="database.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var loginForm = document.getElementById('loginForm');
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire par défaut
+            
+            // Récupérer les valeurs du formulaire
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
 
-            loginForm.addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                // Vérifiez les identifiants ici (remplacez cela par la logique réelle)
-                var identifiantsValides = true;
-
-                if (identifiantsValides) {
-                    // Redirige l'utilisateur vers la page d'accueil après la connexion réussie
-                    window.location.href = 'acceuil.html';
-                } else {
-                    // Gérez le cas où les identifiants ne sont pas valides (par exemple, affichez un message d'erreur)
-                    console.log('Votre identifiant ou mot de passe est incorrect.');
-                }
-            });
+            // Vérifier si les identifiants sont valides
+            if (database.hasOwnProperty(email) && database[email] === password) {
+                // Rediriger vers la page d'accueil si les identifiants sont valides
+                window.location.href = "inscription.html";
+            } else {
+                // Afficher un message d'erreur si les identifiants sont incorrects
+                alert("Adresse e-mail ou mot de passe incorrect.");
+            }
         });
     </script>
 </body>
