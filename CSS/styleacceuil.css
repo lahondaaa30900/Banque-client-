@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px; /* Ajustement de la taille du logo */
+}
+
+.cart {
+    margin-right: 25px;
+}
+
+.cart img {
+    width: 40px; /* Ajustement de la taille de l'icône du panier */
+}
+
+nav {
+    padding-top: 60px; /* Ajustement de l'espacement en fonction de la hauteur de l'en-tête */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.navbar li {
+    margin: 0 10px;
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Alignement vertical des éléments dans la liste */
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 13px;
+    margin: 13px;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+}
+
+.texte {
+    color: #fff; /* Couleur du texte */
+    margin-left: 5px; /* Marge à gauche pour l'espace entre le lien et le texte */
+}
