@@ -1,28 +1,25 @@
-<html>
-    <head>
-        <title>Shopcenter</title>
-        <link rel="stylesheet" href="CSS/syle.css" />
-    </head>
-    <body class="body">
-        <div class="center-text">
-            <img src="Images/Logo/Capture.PNG">
-        </div>            
-        <div id="wrap">
-            <ul class="navbar">
-                <li>
-                    <a href="index.html">Acceuil</a>
-                </li>
-                <li>
-                    <a href="index.html">Homme</a>
-                </li>
-                <li>
-                    <a href="index.html">Femme</a>
-                </li>
-            </ul>
-            <div class="cart">
-                <a href="#" id="panierButton"><img src="./Images/panier/image-panier5.png"></a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Shopcenter</title>
+    <link rel="stylesheet" href="CSS/styleacceuil.css" />
+</head>
+<body class="body">
+    <header>
+        <div class="logo-container">
+            <img src="Images/Logo/Capture.PNG" alt="Logo de Shopcenter">
         </div>
-    </div>
+        <div class="cart">
+            <a href="#" id="panierButton"><img src="./Images/panier/image-panier5.png" alt="Panier"></a>
+        </div>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <a href="index.html"><span class="texte">Acceuil</span></a>
+            <a href="homme.html"><span class="texte">Homme</span></a>
+            <a href="femme.html"><span class="texte">Femme</span></a>
+        </ul>
+    </nav>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
