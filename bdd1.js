@@ -6,3 +6,6 @@ var database = {
     "user4@example.com": "user4",
     "user5@example.com": "user5"
 };
+
+// Exporter la base de données pour qu'elle soit accessible depuis d'autres fichiers
+module.exports = database;
