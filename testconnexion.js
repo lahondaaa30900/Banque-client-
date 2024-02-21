@@ -4,7 +4,7 @@ const { JSDOM } = require('jsdom');
 const fs = require('fs');
 
 // Charger le contenu de la page HTML à tester
-const html = fs.readFileSync('votre_page_de_connexion.html', 'utf-8');
+const html = fs.readFileSync('page_de_co.html', 'utf-8');
 
 // Créer un environnement DOM simulé
 const { window } = new JSDOM(html);
@@ -14,8 +14,8 @@ global.window = window;
 // Charger le script de la base de données simulée
 require('./bdd1.js');
 
-// Charger le script à tester
-require('./votre_script_de_connexion.js');
+// Charger le script de connexion à tester
+require('./Scriptdeconnexion.js');
 
 // Décrire le test de la fonction de connexion
 describe('Test de la fonction de connexion', function() {
