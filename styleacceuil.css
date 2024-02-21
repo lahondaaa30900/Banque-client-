@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 200px; /* Ajustez selon la taille de votre logo */
+}
+
+.cart img {
+    width: 50px; /* Ajustez la taille de l'icône du panier */
+}
+
+nav {
+    padding-top: 60px; /* Ajustez l'espacement en fonction de la hauteur de l'en-tête */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+}
