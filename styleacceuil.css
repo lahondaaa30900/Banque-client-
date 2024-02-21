@@ -26,6 +26,10 @@ header {
     max-width: 200px; /* Ajustez selon la taille de votre logo */
 }
 
+.cart {
+    margin-left: auto; /* Déplace le panier vers la droite */
+}
+
 .cart img {
     width: 50px; /* Ajustez la taille de l'icône du panier */
 }
