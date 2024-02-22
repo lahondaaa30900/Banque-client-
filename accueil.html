@@ -9,10 +9,10 @@
 <body class="body">
     <header>
         <div class="logo-container">
-            <a href="./accueil.html"><img src="Images/Logo/Capture.PNG" alt="Logo de Shopcenter" class="logo"></a>
+            <a href="#"><img src="Images/Logo/Capture.PNG" alt="Logo de Shopcenter" class="logo"></a>
         </div>
         <div class="cart">
-            <a href="#" id="panierButton"><img src="./Images/panier/image-panier5.png" alt="Panier" class="panier"></a>
+            <a href="./panier.html" id="panierButton"><img src="./Images/panier/image-panier5.png" alt="Panier" class="panier"></a>
         </div>      
     </header>
     <nav>
@@ -40,28 +40,33 @@
         <h2>Produits en vedette</h2>
         <div class="product-list">
             <div class="product">
-                <img src="Images/nike_air_force_1.jpg" alt="Nike Air Force 1">
-                <img src="Images/nike_air_force_1.jpg" alt="Nike Air Force 1">
-                <img src="Images/nike_air_force_1.jpg" alt="Nike Air Force 1">
+                <div class="product-images">
+                    <img src="./image/airforceprofil.png" alt="Nike Air Force 1">
+                    <img src="Image/airforcehaut.png" alt="Nike Air Force 1">
+                    <img src="Image/airforcederriere.png" alt="Nike Air Force 1">
+                </div>
                 <p>Nike Air Force 1</p>
                 <button class="add-to-cart-btn" data-product="Nike Air Force 1">Ajouter au panier</button>
+                <div class="product-arrow left">&lt;</div>
+                <div class="product-arrow right">&gt;</div>
             </div>
+            
             <div class="product">
                 <img src="Images/converse_run_star_hike.jpg" alt="Converse Run Star Hike">
                 <p>Converse Run Star Hike</p>
-                <button class="add-to-cart-btn" data-product="Nike Air Force 1">Ajouter au panier</button>
+                <button class="add-to-cart-btn" data-product="Converse Run Star Hike">Ajouter au panier</button>
             </div>
             <div class="product">
                 <img src="Images/nike_dunk_panda.jpg" alt="Nike Dunk Panda">
                 <p>Nike Dunk Panda</p>
-                <button class="add-to-cart-btn" data-product="Nike Air Force 1">Ajouter au panier</button>
+                <button class="add-to-cart-btn" data-product="Nike Dunk Panda">Ajouter au panier</button>
             </div>
             <!-- Ajoutez les autres produits vedettes ici -->
         </div>
     </section>    
 
     <!-- Ajoutez d'autres sections et éléments ici au besoin -->
-
+    <script src="/defileproduit.js"></script>
     <footer>
         <p>&copy; 2024 Shopcenter. Tous droits réservés.</p>
     </footer>

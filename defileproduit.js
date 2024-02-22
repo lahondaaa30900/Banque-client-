@@ -14,3 +14,34 @@ products.forEach(product => {
         images.style.overflowX = 'hidden';
     });
 });
+
+document.querySelectorAll('.product').forEach(product => {
+    const images = product.querySelector('.product-images');
+    const leftArrow = product.querySelector('.product-arrow.left');
+    const rightArrow = product.querySelector('.product-arrow.right');
+
+    let scrollPosition = 0;
+    const imageWidth = images.clientWidth;
+
+    leftArrow.addEventListener('click', () => {
+        scrollPosition -= imageWidth;
+        if (scrollPosition < 0) {
+            scrollPosition = 0;
+        }
+        images.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+        });
+    });
+
+    rightArrow.addEventListener('click', () => {
+        scrollPosition += imageWidth;
+        if (scrollPosition > images.scrollWidth - imageWidth) {
+            scrollPosition = images.scrollWidth - imageWidth;
+        }
+        images.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+        });
+    });
+});
