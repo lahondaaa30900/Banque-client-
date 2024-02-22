@@ -49,6 +49,7 @@ nav {
 
 .navbar li {
     margin: 0 10px;
+    padding: 12px;
     display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
     align-items: center; /* Alignement vertical des éléments dans la liste */
 }
@@ -70,26 +71,122 @@ nav {
 }
 
 .search-form {
+    display: flex;
+    align-items: center;
     margin-left: 20px; /* Ajustement de la marge à gauche */
 }
 
 .search-form input[type="text"] {
     padding: 8px; /* Ajustement de la taille du champ de saisie */
     border: none;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px; /* Coins arrondis à gauche */
     outline: none;
 }
 
-.search-form button {
-    background-color: dodgerblue;
-    color: white;
+.search-form .search-button {
+    background-color: #ffffff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
     border: none;
-    border-radius: 5px;
-    padding: 8px 15px;
+    border-radius: 0 5px 5px 0; /* Coins arrondis à droite */
+    padding: 8px 12px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: calc(100% - 16px);
+}
+
+.search-form .search-button img {
+    width: 20px; /* Ajustement de la taille de l'image */
+    height: auto;
+}
+
+.search-form .search-button:hover {
+    background-color: #fd941c; /* Changement de couleur au survol */
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 100px; /* Marge pour éviter de chevaucher l'en-tête */
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fd941c;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.search-form button:hover {
-    background-color: #007bff; /* Changement de couleur au survol */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles pour les nouvelles sections */
+
+.featured-products,
+.promotions,
+.categories {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured-products h2,
+.promotions h2,
+.categories h2 {
+    color: #000;
+}
+
+.featured-products {
+    background-color: #000000;
+}
+
+.promotions {
+    background-color: #fff;
+}
+
+.categories {
+    background-color: #f8f8f8;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
 }

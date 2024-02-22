@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopcenter</title>
     <link rel="stylesheet" href="CSS/styleacceuil.css" />
 </head>
@@ -22,23 +24,46 @@
             <li>
                 <form class="search-form" action="recherche.html" method="get">
                     <input type="text" name="q" placeholder="Rechercher...">
-                    <button type="submit">Rechercher</button>
+                    <button type="submit" class="search-button"><img src="Images/recherche/loupe.png" alt="Rechercher"></button>
                 </form>
             </li>
         </ul>
     </nav>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Sélectionnez le bouton du panier par son ID
-            var panierButton = document.getElementById('panierButton');
+    <div class="main-content">
+        <h1>BIENVENUE SUR SHOPCENTER</h1>
+        <p>Découvrez notre large sélection de produits à des prix incroyables.</p>
+        <a href="Ic.html" class="btn">Explorer la collection</a>
+    </div>
 
-            // Ajoutez un écouteur d'événements au clic sur le bouton du panier
-            panierButton.addEventListener('click', function () {
-                // Redirigez l'utilisateur vers la page "panier.html"
-                window.location.href = 'panier.html';
-            });
-        });
-    </script>
+    <section class="featured-products">
+        <h2>Produits en vedette</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="Images/nike_air_force_1.jpg" alt="Nike Air Force 1">
+                <img src="Images/nike_air_force_1.jpg" alt="Nike Air Force 1">
+                <img src="Images/nike_air_force_1.jpg" alt="Nike Air Force 1">
+                <p>Nike Air Force 1</p>
+                <button class="add-to-cart-btn" data-product="Nike Air Force 1">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <img src="Images/converse_run_star_hike.jpg" alt="Converse Run Star Hike">
+                <p>Converse Run Star Hike</p>
+                <button class="add-to-cart-btn" data-product="Nike Air Force 1">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <img src="Images/nike_dunk_panda.jpg" alt="Nike Dunk Panda">
+                <p>Nike Dunk Panda</p>
+                <button class="add-to-cart-btn" data-product="Nike Air Force 1">Ajouter au panier</button>
+            </div>
+            <!-- Ajoutez les autres produits vedettes ici -->
+        </div>
+    </section>    
+
+    <!-- Ajoutez d'autres sections et éléments ici au besoin -->
+
+    <footer>
+        <p>&copy; 2024 Shopcenter. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
