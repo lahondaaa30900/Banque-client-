@@ -68,3 +68,28 @@ nav {
     color: #fff; /* Couleur du texte */
     margin-left: 5px; /* Marge à gauche pour l'espace entre le lien et le texte */
 }
+
+.search-form {
+    margin-left: 20px; /* Ajustement de la marge à gauche */
+}
+
+.search-form input[type="text"] {
+    padding: 8px; /* Ajustement de la taille du champ de saisie */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-form button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #007bff; /* Changement de couleur au survol */
+}
